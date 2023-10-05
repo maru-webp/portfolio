@@ -1,0 +1,319 @@
+
+@charset "UTF-8";
+
+:root{
+  /* 背景色 */
+  --background_color: rgb(220, 220, 220);
+}
+
+body{
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'MS Ｐゴシック', sans-serif;
+ margin: 0;
+ color: rgb(100, 100, 100);
+ font-size: 16px;
+}
+
+/* ★共通ナビ_ここから */
+nav ul li{
+  display: inline;
+  list-style: none;
+}
+nav ul li a{
+  font-size: 18px;
+  padding: 0 15px;
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+}
+/* ★共通ナビ_ここまで */
+
+/* ★ヘッダー部分_ここから */
+header{
+  position: relative;
+  height: 150px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header a{
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+}
+div.logo{
+  margin: 0;
+  position: absolute;
+  bottom:20px;
+  left: 30px;
+}
+.logo_img{
+  float: left;
+  transition-duration: 0.3s; /*変化の時間*/
+}
+.logo_img:hover{
+  transform: scale(1.1,1.1); /*画像の拡大*/
+  cursor: pointer; /*カーソルをポインターにする*/
+}
+.GORO{
+  font-size: 32px;
+  font-weight: bold;
+  float: left;
+  margin: 10px;
+}
+nav.header_menu{
+  position: absolute;
+  bottom:20px;
+  right: 30px;
+}
+/* ★ヘッダー部分_ここまで */
+
+/* ★フッター部分_ここから */
+footer{
+  background-color: var(--background_color);
+}
+.footer_contents{
+  height: 150px;
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav.footer_menu{
+  position: absolute;
+  bottom:70px;
+}
+footer p{
+  position: absolute;
+  bottom:40px;
+  right: 20px;
+}
+/* ★フッター部分_ここまで */
+
+/* ★トップページ ここから */
+div.index_head{
+  text-align: center;
+  padding: 0px 0 80px 0;
+  line-height: .5;
+  color: rgb(180, 180, 180);
+}
+div.index_head p.tabegoro{
+  font-size: 30px;
+}
+.index_head_logo{
+  padding: 50px;
+}
+section.service_wrap{
+  position: relative;
+  background-color: var(--background_color);
+  height: auto;
+  overflow: hidden;
+  padding: 80px 0;
+}
+section.works_wrap{
+  position: relative;
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 150px 0 0 0;
+
+}
+
+.service_h1,
+.works_h1{
+  text-align: center;
+  margin: auto;
+  padding: 0px 0 50px 0;
+  font-size: 40px;
+}
+
+section.service_contents{
+  width: 800px;
+  margin: 0 auto;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-between;
+}
+
+div.service_content{
+  max-width: 200px;
+  text-align: center;
+  background-color: rgb(255 255 255);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+div.service_content_h2{
+  border-bottom: 1px dotted gray;
+  line-height: 0.4;
+  padding-bottom: 10px;
+}
+div.service_content_h2 h2{
+font-size: 18px;}
+
+
+div.service_content_h2 p{
+  color: rgb(200, 200, 200);
+}
+
+div.service_content img{
+  margin: 40px 0 20px 0;
+}
+
+p.explanation{
+  line-height: 1.3;
+  text-align: left;
+  font-size: 12px;
+}
+div.more{
+  margin: 20px 0 0 130px ;
+  font-size: 12px;
+}
+
+section.works_content_1{
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+section.works_content_2{
+  height: auto;
+  overflow: hidden;
+  padding: 100px 0;
+/* background-color: antiquewhite; */
+}
+
+table{
+  margin: 0px auto;
+}
+
+td{
+  padding: 0 30px;
+  line-height: 2;
+}
+td.table_category{
+  color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.design_delivery {
+  margin: 0 auto 80px auto;
+}
+
+.portfolio_contents {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+.portfolio_content {
+  background-color: #f9f9f9;
+  width: 380px;
+  margin: 10px;
+
+}
+.img_box {
+  text-align: center;
+  padding: 20px;
+}
+
+.img_box img{
+  box-shadow:  5px 8px 10px #bbb;
+  transition-duration: 0.3s; /*変化の時間*/
+}
+.img_box img:hover {
+  transform: scale(1.1,1.1); /*画像の拡大*/
+  cursor: pointer; /*カーソルをポインターにする*/
+}
+
+.design_explanation {
+  /* デザインの下の説明 */
+  line-height: 1.5em;
+  font-size: 12px;
+  padding: 0 50px 20px;
+}
+
+/* ★トップページ ここまで */
+
+
+/* ★コンタクトCSS ここから*/
+
+.about_h1,
+.contact_h1{
+  text-align: left;
+  padding: 0px 0 80px 40px;
+  font-size: 40px;
+}
+.contact_h1+p{
+  max-width: 575px;
+  margin: 0 auto;
+} 
+
+.wrap{
+  max-width: 960px;
+  margin: 50px auto;
+
+}
+section.contact_form{
+  margin: 20px auto;
+  padding: 50px ;
+  max-width: 575px;
+}
+table.contact{
+  margin-left: 0;
+}
+span.important{
+  background-color: rgb(235, 119, 139);
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 8%;
+  font-size: 14px;
+  font-weight: bold;
+}
+.contact_explanation{
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 15px 5px 0 ;
+  width: 130px;
+  }
+td.contact{
+width: 50px;
+padding: 0 5px;
+}
+input{
+  width: 350px;
+  height: 32px;
+}
+button{
+  display: block;
+  border: none;
+  margin: 20px auto;
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;background-color: rgb(100, 100, 100);
+}
+button a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+button:hover{
+  background-color: rgb(246, 178, 166);
+  transition: .3s;
+}
+/* ★コンタクトCSS ここまで*/
+
+
+/* ★アバウトCSS ここから*/
+
+section.about_content{
+  display: flex;
+  padding: 40px;
+}
+
+div.about_explanation{
+  margin: 0 30px 0;
+}
+table.about_goro{
+  margin-left: 20px;
+}
+td.about_goro{
+  padding: 3px 5px 3px 0px;
+  min-width: 100px;
+}
+/* ★アバウトCSS ここまで*/
