@@ -3,25 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
   <link rel="stylesheet" href="style.css">
-  <title>GORO</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>GORO WORKS</title>
 </head>
 <script type="text/javascript">
   let submitted = false;
 </script>
-<iframe
-  name="hidden_iframe"
-  id="hidden_iframe"
-  style="display: none"
-  onload="if(submitted){window.location='contact_submit.html';}"
-></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+  onload="if(submitted){window.location='contact_submit.html';}"></iframe>
+
 <body>
-  <header>
+  <header class="wrap">
     <a href="index.html">
       <div class="logo">
         <img class="logo_img" src="images/logo_GORO.PNG" alt="logo" height="50" width="100">
-        <p class="GORO">GORO</p>
+        <p class="GORO">GORO WORKS</p>
       </div>
     </a>
     <nav class="header_menu">
@@ -32,70 +30,82 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="wrap">
     <div class="wrap">
       <h1 class="contact_h1">Contact</h1>
-      <p>制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>
-        下記フォームよりわかる範囲でご記入ください。必須の項目は必ずご記入お願いします。</p>
+      <p>制作の依頼・ご相談など、お気軽にお問い合わせください。<br>
+        下記フォームから、わかる範囲でご記入ください。必須の項目は、必ずご記入いただきますようお願いします。</p>
       <section class="contact_form">
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSedeHovLCuIitv9HbWhmYGh9ifnudrjP8o0UnrC7yofiaacGA/formResponse" method="post" target="hidden_iframe"
-        onsubmit="submitted=true;">
-        <table class="contact">
-          <tr class="contact">
-            <td class="contact_explanation">貴社名</td>
-            <td class="contact"></td>
-            <td class="contact">
-              <input
-              name="entry.1282691690"
-              class=""
-              id="field-officename"
-              type="text"
-          />
-            </td>
-          </tr>
-          <tr class="contact">
-            <td class="contact_explanation">お名前</td>
-            <td class="contact"><span class="important">必須</span></td>
-            <td class="contact">
-              <input
-              name="entry.1004145415"
-              class=""
-              id="field-name"
-              type="text"
-              required="required"
-          />
-            </td>
-          </tr>
-          <tr class="contact">
-            <td class="contact_explanation">メールアドレス</td>
-            <td class="contact"><span class="important">必須</span></td>
-            <td class="contact">
-              <input
-              name="entry.1184239299"
-              class=""
-              id="field-mail"
-              type="text"
-              required="required"
-          /></td>
-          </tr>
-          <tr class="contact">
-            <td class="contact_explanation">電話番号</td>
-            <td class="contact"></td>
-            <td class="contact"><input
-              name="entry.1586332172"
-              class=""
-              id="field-phonenumber"
-              type="text"
-          /></td>
-          </tr>
-        </table>
-        <p class="contact_explanation">お問合せの内容</p><span class="important" style="margin-left: 8px;">必須</span>
-        <textarea name="entry.1669013740" class="" id="field-message" placeholder="お問い合わせ内容" cols="82" rows="20" style="display: block;">お問合せの内容をご記入ください</textarea>
- 
+        <form
+          action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSedeHovLCuIitv9HbWhmYGh9ifnudrjP8o0UnrC7yofiaacGA/formResponse"
+          method="post" target="hidden_iframe" onsubmit="submitted=true;">
+          <table class="contact contact_table_pc">
+            <tr class="contact">
+              <td class="contact_explanation">貴社名</td>
+              <td class="contact"></td>
+              <td class="contact">
+                <input name="entry.1282691690" class="" id="field-officename" type="text" />
+              </td>
+            </tr>
+            <tr class="contact">
+              <td class="contact_explanation">お名前</td>
+              <td class="contact"><span class="important">必須</span></td>
+              <td class="contact">
+                <input name="entry.1004145415" class="" id="field-name" type="text" required="required" />
+              </td>
+            </tr>
+            <tr class="contact">
+              <td class="contact_explanation">メールアドレス</td>
+              <td class="contact"><span class="important">必須</span></td>
+              <td class="contact">
+                <input name="entry.1184239299" class="" id="field-mail" type="text" required="required" />
+              </td>
+            </tr>
+            <tr class="contact">
+              <td class="contact_explanation">電話番号</td>
+              <td class="contact"></td>
+              <td class="contact"><input name="entry.1586332172" class="" id="field-phonenumber" type="text" /></td>
+            </tr>
+          </table>
+          <table class="contact contact_table">
+            <tr>
+              <td class="contact_explanation">貴社名</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="contact">
+                <input name="entry.1282691690" class="" id="field-officename" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact_explanation">お名前<span class="important">必須</span></td>
+            </tr>
+            <tr>
+              <td class="contact">
+                <input name="entry.1004145415" class="" id="field-name" type="text" required="required" />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact_explanation">メールアドレス<span class="important">必須</span></td>
+            </tr>
+            <tr>
+              <td class="contact">
+                <input name="entry.1184239299" class="" id="field-mail" type="text" required="required" />
+              </td>
+            </tr>
+            <tr class="contact">
+              <td class="contact_explanation">電話番号</td>
+            </tr>
+            <tr>
+              <td class="contact"><input name="entry.1586332172" class="" id="field-phonenumber" type="text" /></td>
+            </tr>
+          </table>
+          <p class="contact_explanation">お問合せの内容</p><span class="important" style="margin-left: 8px;">必須</span>
+          <textarea name="entry.1669013740" class="contact_textarea" id="field-message" placeholder="お問い合わせ内容をご記入ください。" style="display: block;"></textarea>
       </section>
 
-      <button type="submit"><a href="index.html" >送 信</a></button>
-    </form>
+      <button type="submit"><a href="contact_submit.html">送 信</a></button>
+      </form>
     </div>
 
 

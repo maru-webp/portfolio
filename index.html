@@ -3,20 +3,21 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <title>GORO</title>
+  <title>GORO WORKS</title>
 </head>
 
 <body>
-  <header>
-    <a href="index.html">
-      <div class="logo">
-        <img class="logo_img" src="images/logo_GORO.PNG" alt="logo" height="50" width="100">
-        <p class="GORO">GORO</p>
-      </div>
-    </a>
+  <header class="wrap">
+      <a href="index.html">
+        <div class="logo">
+          <img class="logo_img" src="images/logo_GORO.PNG" alt="logo" height="50" width="100">
+          <p class="GORO">GORO WORKS</p>
+        </div>
+      </a>
+    
     <nav class="header_menu">
       <ul>
         <li class="header_menu_li"><a href="about.html">About</a></li>
@@ -25,53 +26,96 @@
       </ul>
     </nav>
   </header>
-  <div class="index_head">
+  <div class="index_head wrap">
     <img class="index_head_logo" src="images/logo_GORO.PNG" alt="logo" height="150" width="290">
     <p class="tabegoro">食べ"ごろ"、飲み"ごろ"、"ごろごろ" …</p>
-    <p>あなたの「心地よい時間・自分らしい環境」はどんな「ごろ」ですか？</p>
-    <p>「あなたらしさ」を実現できる ものづくり や 環境づくり のお手伝いをします。</p>
+    <div class="tabegoro_explanation">
+    <p>あなたの「心地よい時間・自分らしい環境」は<br>どんな「ごろ」ですか？</p>
+    <p>「あなたらしさ」を実現できる ものづくり や<br>環境づくり のお手伝いをします。</p>
+  </div>
   </div>
   <main>
     <section class="service_wrap">
       <!-- セクションの中に入るとhタグはレベルが1つ下がる -->
-      <h1 class="service_h1">Service</h1>
-      <section class="service_contents">
-        <div class="service_content">
-          <div class="service_content_h2">
-            <h2>ディレクション</h2>
-            <p>direction</p>
+      <div class="wrap">
+        <h1 class="service_h1">Service</h1>
+        <section class="service_contents">
+          <div class="service_content">
+            <div class="service_content_h2">
+              <h2>ディレクション</h2>
+              <p>direction</p>
+            </div>
+            <img src="images/service_direction_img.png" alt="ディレクション" height="100" width="100">
+            <p class="explanation">どんなお手伝いができますか？<br>でも、必要なお手伝いをおこなう前に、あなたの実現したい環境やものづくりについて、じっくりと聞かせてください。</p>
+            <!-- <div class="more">>> more</div> -->
           </div>
-          <img src="images/service_direction_img.png" alt="ディレクション" height="100" width="100">
-          <p class="explanation">さて、どんなお手伝いができますか？でも、必要なお手伝いをおこなう前に、あなたの実現したい環境やものづくりについて、じっくりと聞かせてください。</p>
-          <!-- <div class="more">>> more</div> -->
-        </div>
-        <div class="service_content">
-          <div class="service_content_h2">
-            <h2>デザイン 提案・作成</h2>
-            <p>design</p>
+          <div class="service_content">
+            <div class="service_content_h2">
+              <h2>デザイン 提案・作成</h2>
+              <p>design</p>
+            </div>
+            <img src="images/service_design_img.png" alt="デザイン" height="100" width="100">
+            <p class="explanation">デザインの目的は、表現することではなく、伝えること。<br>
+              ヒアリングに基づいた伝えたい真意とプランに沿って、デザインを作成します。</p>
+            <!-- <div class="more">>> more</div> -->
           </div>
-          <img src="images/service_design_img.png" alt="デザイン" height="100" width="100">
-          <p class="explanation">デザインの目的は、表現することではなく、伝えること。<br>
-            ヒアリングに基づいた伝えたい真意とプランに沿って、デザインを作成します。</p>
-          <!-- <div class="more">>> more</div> -->
-        </div>
-        <div class="service_content">
-          <div class="service_content_h2">
-            <h2>健康・栄養事業</h2>
-            <p>nutrition</p>
+          <div class="service_content">
+            <div class="service_content_h2">
+              <h2>健康・栄養事業</h2>
+              <p>nutrition</p>
+            </div>
+            <img src="images/service_nutrition_img.png" alt="健康・栄養事業" height="100" width="100">
+            <p class="explanation">人生のテーマは「健康教育」。<br>実は、管理栄養士の資格を持っています。<br>
+              栄養学の予防医学的な発展のためにいろいろと活動中です。</p>
+            <!-- <div class="more">>> more</div> -->
           </div>
-          <img src="images/service_nutrition_img.png" alt="健康・栄養事業" height="100" width="100">
-          <p class="explanation">人生のテーマは「健康教育」。<br>実は、管理栄養士の資格を持っています。<br>
-            栄養学の予防医学的な発展のためにいろいろと活動中です。</p>
-          <!-- <div class="more">>> more</div> -->
-        </div>
-      </section>
+        </section>   
+      </div>
+
     </section>
 
-    <section class="works_wrap" id="works">
+    <section class="works_wrap wrap" id="works">
       <h1 class="works_h1">Works</h1>
       <section class="works_content_1">
-        <table>
+        <table class="works_table">
+          <tr>
+            <td class="table_category">nutrition</td><td rowspan="2" class="works_td_2">特定保健指導／九州 某市<br>食事調査アドバイザー</td>
+          </tr>
+          <tr>
+            <td>2023.09</td>
+          </tr>
+          <tr>
+            <td class="table_category">design</td><td rowspan="2" class="works_td_2">イベントチラシ・チケットデザインの作成 15件</td>
+          </tr>
+          <tr>
+            <td>2023.08~</td>
+          </tr>
+          <tr>
+            <td class="table_category">direction</td><td rowspan="2" class="works_td_2">SNS運用・分析,イベント運営・広報と告知媒体作成</td>
+          </tr>
+          <tr>
+            <td>2019.04~</td>
+          </tr>
+          <tr>
+            <td class="table_category">direction</td><td rowspan="2" class="works_td_2">イベント運営・広報のディレクションと告知媒体作成</td>
+          </tr>
+          <tr>
+            <td>2019.02</td>
+          </tr>
+          <tr>
+            <td class="table_category">direction</td><td rowspan="2" class="works_td_2">イベント運営・広報のディレクションと告知媒体作成</td>
+          </tr>
+          <tr>
+            <td>2017.12</td>
+          </tr>          <tr>
+            <td class="table_category">nutrition</td><td rowspan="2" class="works_td_2">特定保健指導／九州 某市<br>年度特定診断 指導員</td>
+          </tr>
+          <tr>
+            <td>2017.07</td>
+          </tr>
+
+        </table>
+        <table class="works_table_pc">
           <tr>
             <td class="table_category">nutrition</td>
             <td>2023.09</td><td>特定診断保健指導／九州 某市 食事調査アドバイザー</td>
