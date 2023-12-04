@@ -40,7 +40,7 @@ nav ul li a{
 header{
   position: relative;
   height: 150px;
-  max-width: 960px;
+  max-width: 480px;
   margin: 0 auto;
 }
 header a{
@@ -82,7 +82,7 @@ footer{
 .footer_contents{
   height: 150px;
   position: relative;
-  max-width: 960px;
+  max-width: 480px;
   margin: 0 auto;
 }
 nav.footer_menu{
@@ -259,9 +259,10 @@ td.table_category{
 
 
 /* ★コンタクトCSS ここから*/
-/* table.contact_table_pc{
+
+table.contact_table_pc{
   display: none;
-} */
+}
 
 .about_h1,
 .contact_h1{
@@ -304,14 +305,14 @@ span.important{
   }
 td.contact{
   padding: 0 5px;
-border: solid 1px #000;
+  /* border: solid 1px #000; */
 }
 input{
   width: 300px;
   height: 32px;
 }
 textarea{
-  width: 308px;
+  width: 300px;
   height: 200px;
 }
 
@@ -321,7 +322,8 @@ button{
   margin: 20px auto;
   width: 120px;
   height: 40px;
-  border-radius: 15px;background-color: rgb(100, 100, 100);
+  border-radius: 15px;
+  background-color: rgb(100, 100, 100);
 }
 button a{
   text-decoration: none;
@@ -647,21 +649,21 @@ td.contact{
   padding: 0 5px;
 }
 input{
-  width: 300px;
+  width: 450px;
   height: 32px;
 }
 textarea{
-  width: 308px;
+  width: 450px;
   height: 200px;
 }
-
 button{
   display: block;
   border: none;
   margin: 20px auto;
   width: 120px;
   height: 40px;
-  border-radius: 15px;background-color: rgb(100, 100, 100);
+  border-radius: 15px;
+  background-color: rgb(100, 100, 100);
 }
 button a{
   text-decoration: none;
@@ -970,8 +972,12 @@ width: 50px;
 padding: 0 5px;
 }
 input{
-  width: 350px;
+  width: 450px;
   height: 32px;
+}
+textarea{
+  width: 450px;
+  height: 200px;
 }
 button{
   display: block;
@@ -979,7 +985,8 @@ button{
   margin: 20px auto;
   width: 120px;
   height: 40px;
-  border-radius: 15px;background-color: rgb(100, 100, 100);
+  border-radius: 15px;
+  background-color: rgb(100, 100, 100);
 }
 button a{
   text-decoration: none;
